@@ -1,5 +1,5 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Badge from '../components/Badge.astro';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -7,8 +7,14 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro">
-	
+  <main>
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+        José Luis Cáceres<div class="flex justify-center items-center"><Badge>Disponible</Badge></div>
+      </h1>
+      <h2 class="text-xl">Software Engineer - Full Stack Developer - Cloud Engineer</h2>
+    </section>
+  </main>
 </Layout>
 
-<style>
-</style>
+<style></style>
