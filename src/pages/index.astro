@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import LinkedIn from '../icons/LinkedIn.astro';
 import SocialPill from '../components/SocialPill.astro';
 import GitHub from '../icons/GitHub.astro';
+import Card from '../components/Card.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -25,21 +26,27 @@ import GitHub from '../icons/GitHub.astro';
           class="flex justify-center items-center"><Badge>LinkedIn</Badge></a
         >
       </h1>
-      <h2 class="text-2xl backdrop-opacity-80 text-wrap mb-3">
+      <h2 class="text-2xl backdrop-opacity-80 text-wrap mb-3 text-white">
         Software Engineer - Full Stack Developer - Cloud Engineer
       </h2>
       <nav class="flex gap-x-2">
         <SocialPill
           href="https://www.linkedin.com/in/jos%C3%A9-luis-c%C3%A1ceres-losada-0a0185125/"
         >
-          <LinkedIn class="w-6 h-6" />
+          <LinkedIn class="w-6 h-6 text-white" />
           LinkedIn
         </SocialPill>
         <SocialPill href="https://github.com/jlclosada">
-          <GitHub class="w-6 h-6" />
+          <GitHub class="w-6 h-6 text-white" />
           GitHub
         </SocialPill>
       </nav>
+      <section class="mt-4 flex flex-wrap items-center gap-4">
+      <Card name="Python" link = "/projects/python"></Card>
+      <Card name = "JavaScript" link="/projects/javascript"></Card>
+      <Card name="SQL" link="/projects/sql"></Card>
+      <Card name="Cloud" link="/projects/sql"></Card>
+    </section>
     </section>
   </main>
 </Layout>
