@@ -1,0 +1,13 @@
+---
+const { name, link } = Astro.props;
+---
+
+<a href={link} 
+  class="block w-86 h-30 p-6 border border-gray-700 rounded-lg shadow-sm bg-gray-900 text-white transition-all transform hover:scale-105 hover:brightness-150 hover:border-white-100 hover:shadow-xl">
+    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
+        {name}
+    </h5>
+    <p class="font-normal text-gray-400">
+        Learn more about my {name} projects.
+    </p>
+</a>

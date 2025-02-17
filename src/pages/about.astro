@@ -1,26 +1,84 @@
 ---
 import Badge from '../components/Badge.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import LinkedIn from '../icons/LinkedIn.astro';
+import GitHub from '../icons/GitHub.astro';
 ---
 
-<Layout title="About me">
-  <main>
-    <section class="w-full lg:w-[740px] mx-auto py-44">
-      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
-        About me
-        <div class="flex justify-center items-center">
-          <Badge>29 years old</Badge>
-          <Badge>+8 years of experience</Badge>
-        </div>
+<Layout title="About Me">
+  <main class="pt-20 flex flex-col items-center">
+    <section class="w-full max-w-3xl px-6 py-12 bg-transparent rounded-lg shadow-md">
+      <!-- Header -->
+      <h1 class="text-white text-4xl font-bold pb-4 flex flex-wrap gap-2">
+        About Me
+        <Badge>29 years old</Badge>
+        <Badge>+8 years of experience</Badge>
       </h1>
-      <h2 class="text-xl backdrop-opacity-80">
-        I was born in Seville, Spain, in 1995. I am a software developer with a passion for creating innovative solutions and learning new technologies. Over the years, I have gained experience in various programming languages and frameworks, and I enjoy working on both front-end and back-end development. In my free time, I like to explore new places, read books, and contribute to open-source projects.
-      </h2>
+      <p class="text-gray-400 text-md leading-relaxed">
+        I was born in Seville, Spain, in 1995. I'm a passionate software developer who loves building innovative solutions and staying up to date with new technologies. I enjoy working across the full stack, from crafting sleek UIs to optimizing back-end performance.  
+        When I’m not coding, you’ll find me **exploring new places, reading, or contributing to open-source projects**.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="mt-10 w-full max-w-3xl px-6">
+      <h2 class="text-white text-3xl font-semibold pb-4">Tech Stack</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <Badge>JavaScript</Badge>
+        <Badge>TypeScript</Badge>
+        <Badge>Python</Badge>
+        <Badge>React</Badge>
+        <Badge>Node.js</Badge>
+        <Badge>SQL & NoSQL</Badge>
+        <Badge>Cloud (AWS, GCP)</Badge>
+        <Badge>Docker & Kubernetes</Badge>
+        <Badge>CI/CD</Badge>
+      </div>
+    </section>
+
+    <!-- Experience & Education -->
+    <section class="mt-10 w-full max-w-3xl px-6">
+      <h2 class="text-white text-3xl font-semibold pb-4">Experience & Education</h2>
+      <div class="border-l-2 border-gray-700 pl-4">
+        <div class="mb-4">
+          <h3 class="text-lg text-white font-bold">Senior Software Engineer</h3>
+          <p class="text-gray-400 text-sm">Tech Company - 2020 - Present</p>
+          <p class="text-gray-500 text-sm">Building scalable applications and leading backend development.</p>
+        </div>
+        <div class="mb-4">
+          <h3 class="text-lg text-white font-bold">Software Engineer</h3>
+          <p class="text-gray-400 text-sm">Startup - 2017 - 2020</p>
+          <p class="text-gray-500 text-sm">Worked on web applications, DevOps, and cloud solutions.</p>
+        </div>
+        <div>
+          <h3 class="text-lg text-white font-bold">Computer Science Degree</h3>
+          <p class="text-gray-400 text-sm">University of Seville - 2013 - 2017</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal Interests -->
+    <section class="mt-10 w-full max-w-3xl px-6">
+      <h2 class="text-white text-3xl font-semibold pb-4">Personal Interests</h2>
+      <div class="flex flex-wrap gap-4">
+        <span class="bg-gray-800 text-white px-4 py-2 rounded-lg shadow-md">🎸 Playing Guitar</span>
+        <span class="bg-gray-800 text-white px-4 py-2 rounded-lg shadow-md">📚 Reading Tech & Sci-Fi Books</span>
+        <span class="bg-gray-800 text-white px-4 py-2 rounded-lg shadow-md">✈️ Traveling & Exploring</span>
+        <span class="bg-gray-800 text-white px-4 py-2 rounded-lg shadow-md">🤖 AI & Machine Learning</span>
+      </div>
+    </section>
+
+    <!-- Social Links -->
+    <section class="mt-10 w-full max-w-3xl px-6">
+      <h2 class="text-white text-3xl font-semibold pb-4">Connect With Me</h2>
+      <div class="flex gap-4">
+        <a href="https://www.linkedin.com/in/jos%C3%A9-luis-c%C3%A1ceres-losada-0a0185125/" class="flex items-center gap-2 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition">
+          <LinkedIn class="w-5 h-5 text-white" /> LinkedIn
+        </a>
+        <a href="https://github.com/jlclosada" class="flex items-center gap-2 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition">
+          <GitHub class="w-5 h-5 text-white" /> GitHub
+        </a>
+      </div>
     </section>
   </main>
 </Layout>
-
-<style></style>
